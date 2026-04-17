@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Modern</title>
+    <style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    height: 100vh;
+    background: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* LOGIN BOX */
+.login-box {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TITLE */
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+/* INPUT BOX */
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* FOCUS EFFECT */
+.input-box input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79,172,254,0.5);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #777;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+/* LINK */
+.link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.link a {
+    color: #777;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+</style>
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <form class="login-box" action="Blog.html" method="post">
+        <h2>Login</h2>
+
+        <!-- Nama -->
+        <div class="input-box">
+            <i class="fa fa-user"></i>
+            <input type="text" name="nama" placeholder="Nama" required>
+        </div>
+
+        <!-- Email -->
+        <div class="input-box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <!-- Password -->
+        <div class="input-box">
+            <i class="fa fa-lock"></i>
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <p class="link">
+            Belum punya akun? <a href="#">Register</a>
+        </p>
+    </form>
+
+</div>
+
+</body>
+</html>

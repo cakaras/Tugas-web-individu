@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Amin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #777;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #4facfe;
+        }
+
+        /* TITLE */
+        .title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* AUDIO PLAYER */
+        .audio-bar {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .audio-bar audio {
+            width: 300px;
+        }
+
+        /* CONTENT */
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .post {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #4facfe;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #2f80ed;
+        }
+
+        /* VIDEO RESPONSIVE */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* rasio 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Beranda</a>
+        <a href="Blog.html">Blog</a>
+        <a href="cv.html">CV</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <div class="title">
+        <h1>Blog Amin</h1>
+    </div>
+
+    <!-- AUDIO PLAYER -->
+    <div class="audio-bar">
+        <audio autoplay loop controls>
+            <source src="asstest/blog/lagu/KaaCee & BLVCK CROWZ - Rave Girl (Extended Mix) [sr-JK3o83B0].mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="container">
+
+        <!-- POST 1 -->
+        <div class="post">
+            <h2>1. Apa itu Cyber Security?</h2>
+            <p>Cyber Security adalah praktik melindungi sistem, jaringan, dan data dari serangan digital. Ini adalah skill wajib di era digital saat ini.</p>
+        </div>
+
+        <!-- POST 2 -->
+        <div class="post">
+            <h2>2. Pentingnya Pentest untuk Website</h2>
+            <p>Pentest membantu menemukan celah keamanan sebelum hacker menemukannya. Ini penting untuk melindungi data pengguna.</p>
+        </div>
+
+        <!-- POST 3 -->
+        <div class="post">
+            <h2>3. Dasar-Dasar Networking</h2>
+            <p>Pelajari konsep dasar seperti IP Address, DNS, dan routing untuk memahami bagaimana internet bekerja.</p>
+        </div>
+
+        <!-- POST 4 -->
+        <div class="post">
+            <h2>4. Mengenal Bug Bounty</h2>
+            <p>Bug bounty adalah program dimana kamu dibayar untuk menemukan celah keamanan pada sistem perusahaan.</p>
+        </div>
+
+        <!-- POST 5 -->
+        <div class="post">
+            <h2>5. Belajar Linux untuk Hacker</h2>
+            <p>Linux adalah sistem operasi utama yang digunakan dalam dunia hacking dan cyber security.</p>
+        </div>
+
+        <!-- POST 6 -->
+        <div class="post">
+            <h2>6. DevOps untuk Pemula</h2>
+            <p>DevOps menggabungkan development dan operations untuk mempercepat deployment aplikasi.</p>
+        </div>
+
+        <!-- POST 7 -->
+        <div class="post">
+            <h2>7. Belajar Ethical Hacking</h2>
+            <p>Ethical hacking adalah teknik hacking legal untuk meningkatkan keamanan sistem.</p>
+        </div>
+
+        <!-- VIDEO YOUTUBE (DIPERBAIKI) -->
+        <div class="post">
+            <h2>Video Tutorial Cyber Security</h2>
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/dXgDxx1Vjis"
+                    title="Video Tutorial Cyber Security"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
